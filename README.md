@@ -51,3 +51,16 @@ for (int i = 0; i < mass.Length; i++)
     }
 }
 ```
+Функция для определения длины строки выглядит следующим образом:
+```cs
+int StringLen(string text)
+{
+    int m = 0;
+    foreach (char n in text)
+    {
+        m++;
+    }
+    return m;
+}
+```
+---
