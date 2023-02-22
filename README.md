@@ -64,3 +64,17 @@ int StringLen(string text)
 }
 ```
 ---
+После этого инициализируем выходной массив и добавляем в него строки длиной 3 или меньше.
+```cs
+string[] NewMass = new string[NewMassLen];
+int n = 0;
+for (int i = 0; i < mass.Length; i++)
+{
+    if (StringLen(mass[i]) <= 3 && mass[i] != "0")
+    {
+        NewMass[n] = mass[i];
+        n++;
+    }
+}
+```
+---
